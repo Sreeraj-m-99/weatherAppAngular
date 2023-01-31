@@ -1,0 +1,80 @@
+<!-- <form action="" #form="ngForm" (submit)="onSubmit()">
+<input type="text" placeholder="enter city name" name="city" [(ngModel)]="city">
+
+</form>
+
+<h1> city:{{city}}</h1>  
+ <p><img src="" alt=""></p> 
+ <h1>Temparature:{{temparature}}°c</h1>
+<h1>Feels like:{{feelLikeTemparature}}°c</h1>
+<h1>pressure:{{pressure}} hpa</h1>
+<h1>Humidity:{{humidity}}%</h1>
+<h1>summary:{{summary}}</h1>  -->
+  <div class="container">
+    <div class="hero">
+        <img src="{{IconUrl}}" alt="">
+    <div class="innercontainer1">
+        <div class="input">
+            <form action="" #form="ngForm" (submit)="onSubmit()">
+            <input type="text" placeholder="enter city name" name="city" [(ngModel)]="city">
+
+        </form></div>
+
+        <div class="city"><h1>{{city}}</h1></div>
+        <div class="summary"><h1>  {{summary}}</h1></div>
+        <div class="temparature"><h1>{{temparature}}°c </h1></div>
+
+    </div>
+    <div class="innercontainer2">
+
+        <div class="humidity">
+            <div class="heading">
+                <i class="fa-thin fa-temperature-sun"></i>
+                                <h1>Humidity</h1>
+
+            </div>
+            <div class="value">
+
+                <h3>{{humidity}}%</h3>
+
+            </div>
+
+        </div>
+        <div class="pressure">
+            <div class="heading">
+                <h1>Pressure</h1>
+
+            </div>
+            <div class="value">
+
+                <h3>  {{pressure}} hpa</h3>
+
+            </div>
+
+        </div>
+        <div class="feelslike">
+            <div class="heading">
+                <h1>Feelslike</h1>
+
+            </div>
+            <div class="value">
+
+                <h3> {{feelLikeTemparature}}°c</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+  </div>
+
+
+
+  
+ 
+
+
+
+
+ 
